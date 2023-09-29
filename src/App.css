@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,26 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+
+.flag-list {
+  display: flex;
+  flex-wrap: wrap; /* items to wrap to the next row */
+  justify-content: space-between; /* Space between items */
+  padding: 20px; /* padding around the flag items */
 }
+
+.flag-item {
+  flex-basis: calc(20% - 20px); /* Set the width for five items per row with some spacing */
+  text-align: center; /* Center-align each item */
+  margin-bottom: 20px; /* Add spacing at the bottom of each item */
+}
+
+.flag-img {
+  max-width: 55%; 
+}
+
+
+
+
