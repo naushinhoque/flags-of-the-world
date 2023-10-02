@@ -31,11 +31,11 @@ function FlagList() {
   }
 
   return (
-    <div>
+    <div className="flag-list">
       {countries.map((country) => (
         <div key={country.cca2}>
-          <img src={country.flags[0]} alt={country.name.common} />
-          <p>{country.name.common}</p>
+          <img className="flag-img" src={country.flags[0]} alt={country.name.common} />
+          <p className="country-name">{country.name.common}</p>
         </div>
       ))}
     </div>
