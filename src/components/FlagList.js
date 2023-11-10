@@ -35,7 +35,7 @@ function FlagList() {
   return (
     <div className="flag-list">
       {countries.map((country) => (
-        <div key={country.cca2}>
+        <div key={country.cca2} style={{ border: '2px solid black', padding: '2px', backgroundColor: 'white' }}>
           <Link to={country.name.common}>
             <img className="flag-img" src={country.flags[0]} alt={country.name.common} />
             <p className="country-name">{country.name.common}</p>
